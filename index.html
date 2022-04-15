@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="./js/jquery-3.6.0.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+		<script defer src="./js/script.js"></script>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<link rel="stylesheet" href="./css/styles.css">
+		<link rel="stylesheet" href="./css/media.css">
+		<title>Zecurion</title>
+	</head>
+
+	<body class="m-auto">
+		<header class="d-flex align-items-center" style="height: 51px">
+			<div class="container d-flex justify-content-between">
+				<a href="/">
+					<img src="./img/logo.svg" alt="Логотип сайта">
+				</a>
+				<div class="login">
+					<img src="./img/user-icon.svg" alt="user icon" class="user-icon">
+					<span class="user-name">Имя Фамилия</span>
+					<a href="#!" title="Выход">
+						<img src="./img/exit-icon.svg" alt="выход">
+					</a>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<div class="breadcrumbs container d-flex align-items-center">
+				<a href="#!">
+					<span class="item1">Сотрудники</span>
+				</a>
+				<span class="arrow">&rsaquo;</span>
+				<a href="#!">
+					<span class="item2">Виктория Беляева, belyaeva@companyname</span>
+				</a>
+			</div>
+
+			<div class="container wrap">
+				<aside class="aside">
+					<div class="quick-search">
+						<button type="submit"><img src="./img/search-icon.svg" alt="search-icon"></button>
+						<input type="search" id="site-search" name="q" placeholder="Быстрый поиск..."/>
+					</div>
+
+					<div class="user-plate d-flex align-items-center">
+						<img src="./img/user-1.png" alt="">
+						<div class="user-plate__info">
+							<h2 class="user-plate__name">Анна Иванова
+								<span class="eye"></span>
+							</h2>
+							<h3 class="user-plate__post">Менеджер, Отдел продаж</h3>
+							<span class="user-plate__state dismissal">на&nbsp;увольнении</span>
+						</div>
+						<span class="user-plate__number">12</span>
+					</div>
+
+					<div class="user-plate d-flex align-items-center">
+						<img src="./img/user-2.png" alt="">
+						<div class="user-plate__info">
+							<h2 class="user-plate__name">Виктория Беляева</h2>
+							<span class="user-plate__post">Менеджер, Отдел продаж</span>
+							<span class="user-plate__state vacation">в&nbsp;отпуске</span>
+						</div>
+						<span class="user-plate__number">247</span>
+					</div>
+
+					<div class="user-plate d-flex align-items-center">
+						<img src="./img/user-3.png" alt="">
+						<div class="user-plate__info">
+							<h2 class="user-plate__name">Виктор Сурков</h2>
+							<h3 class="user-plate__post">Менеджер, Отдел продаж</h3>
+						</div>
+						<span class="user-plate__number">0</span>
+					</div>
+				</aside>
+
+				<div class="main">
+					<section class="employee-info">
+						<div class="employee-name d-flex align-items-start">
+							<img src="./img/user-2.png" alt="">
+							<div style="position: relative;">
+								<div class="employee-name__heading">Виктория Беляева</div>
+								<span class="employee__mood"></span>
+								<div class="user-plate__post">Менеджер, Отдел продаж</div>
+							</div>
+						</div>
+
+						<div class="employee-activity"></div>
+						<div class="common-activity d-flex justify-content-between">
+							<h2 class="activity__heading">Последняя активность&nbsp;
+								<span class="activity-time">сегодня в 12:22</span>
+							</h2>
+							<a href="#!" class="employees-list">к&nbsp;списку сотрудников</a>
+						</div>
+
+						<div class="activity-details">
+							<div class="risk-level">
+								<h3 class="main__subheading">Уровень риска</h3>
+								<div class="d-flex" style="position: relative">
+									<span class="activity__value">157</span>
+									<div style="height: 10px">
+										<span class="activity__value__arrow red-arrow-down"></span>
+										<span class="activity__value__procent">-100%</span>
+									</div>
+								</div>
+							</div>
+							<div class="productivity">
+								<h3 class="main__subheading">Продуктивность</h3>
+								<div class="d-flex" style="position: relative">
+									<span class="activity__value">86%</span>
+									<div style="height: 10px">
+										<span class="activity__value__arrow green-arrow-up"></span>
+										<span class="activity__value__procent">+3%</span>
+									</div>
+								</div>
+							</div>
+							<div class="activity-index">
+								<h3 class="main__subheading">Индекс активности</h3>
+								<div class="d-flex" style="position: relative">
+									<span class="activity__value">2,4%</span>
+									<div style="height: 10px">
+										<span class="activity__value__arrow red-arrow-up"></span>
+										<span class="activity__value__procent">+14%</span>
+									</div>
+								</div>
+							</div>
+							<div class="monitoring d-flex align-items-center">
+								<a href="#!"><img src="./img/icon-checked.svg" alt=""></a>
+								<a href="#!"><img src="./img/icon-video.svg" alt=""></a>
+								<a href="#!"><img src="./img/icon-monitor.svg" alt=""></a>
+								<a href="#!"><img src="./img/icon-more.svg" alt=""></a>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<ul class="anomalies">
+							<li>
+								<h2 class="anomalies__heading main__heading">Аномалии</h2>
+							</li>
+							<li class="anomalies__item1">Использование более одного аккаунта в&nbsp;соцсетях или мессенджерах</li>
+							<li class="anomalies__item2">Первое использование устройства</li>
+							<li class="anomalies__item3">Отсутствие более 40&nbsp;дней</li>
+						</ul>
+					</section>
+
+					<section class="key-indicators">
+						<h2 class="key-indicators__heading main__heading">
+							Основные показатели
+						</h2>
+						<div class="key-indicators__data d-flex align-items-center justify-content-center">
+							Данные не&nbsp;найдены
+						</div>
+					</section>
+
+					<section class="discipline" id="discipline">
+						<ul>
+							<li>
+								<div class="apps-categories">
+									<h2 class="main__heading">Приложения и&nbsp;категории</h2>
+									<table class="tg">
+										<thead>
+											<tr>
+												<th class="tg-zbu7">Категории приложений</th>
+												<th class="tg-mrss">время</th>
+												<th class="tg-mrss">%</th>
+												<th class="tg-mrss">рост</th>
+											</tr>
+										</thead>
+
+										<tbody>
+											<tr>
+												<td class="tg-zbu7">
+													<span class="category-icon yellow"></span>
+													Мессенджеры
+												</td>
+												<td class="tg-mrss">20:55</td>
+												<td class="tg-mrss">18</td>
+												<td class="tg-mrss">+2%</td>
+											</tr>
+											<tr>
+												<td class="tg-zbu7">
+													<span class="category-icon yellow"></span>
+													Браузеры
+												</td>
+												<td class="tg-mrss">15:11</td>
+												<td class="tg-mrss">12</td>
+												<td class="tg-mrss">-3%</td>
+											</tr>
+											<tr>
+												<td class="tg-zbu7">
+													<span class="category-icon pink"></span>
+													Игры
+												</td>
+												<td class="tg-mrss">13:11</td>
+												<td class="tg-mrss">7</td>
+												<td class="tg-mrss">0</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</li>
+							<li>
+								<div class="sites-categories">
+									<h2 class="main__heading">Сайты и&nbsp;категории</h2>
+
+									<table class="tg">
+										<thead>
+											<tr>
+												<th class="tg-zbu7">Категории сайтов</th>
+												<th class="tg-mrss">время</th>
+												<th class="tg-mrss">%</th>
+												<th class="tg-mrss">рост</th>
+											</tr>
+										</thead>
+
+										<tbody>
+											<tr>
+												<td class="tg-zbu7">
+													<span class="category-icon yellow"></span>
+													Поисковики
+												</td>
+												<td class="tg-mrss">20:55</td>
+												<td class="tg-mrss">18</td>
+												<td class="tg-mrss">+2%</td>
+											</tr>
+											<tr>
+												<td class="tg-zbu7">
+													<span class="category-icon green"></span>
+													Новостные порталы
+												</td>
+												<td class="tg-mrss">15:11</td>
+												<td class="tg-mrss">12</td>
+												<td class="tg-mrss">-3%</td>
+											</tr>
+											<tr>
+												<td class="tg-zbu7">
+													<span class="category-icon green"></span>
+													Сайты с неопределенным наполнением
+												</td>
+												<td class="tg-mrss">13:11</td>
+												<td class="tg-mrss">7</td>
+												<td class="tg-mrss">0</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</li>
+							<li>
+								<div class="work-schedule">
+									<h2 class="main__heading">Дисциплина</h2>
+
+									<table class="tg">
+										<thead>
+											<tr>
+												<th class="tg-zbu7">Дата</th>
+												<th class="tg-mrss mrss2">Приход на&nbsp;работу</th>
+												<th class="tg-mrss mrss2">Уход с&nbsp;работы</th>
+												<th class="tg-mrss mrss2">Время на&nbsp;работе</th>
+											</tr>
+										</thead>
+
+										<tbody>
+											<tr>
+												<td class="tg-zbu7">29.02</td>
+												<td class="tg-mrss">08:46 <span class="time-red">+16мин</span></td>
+												<td class="tg-mrss">08:46 <span class="time-red">+16мин</span></td>
+												<td class="tg-mrss">09:06 <span class="time-green">+6мин</span></td>
+											</tr>
+											<tr>
+												<td class="tg-zbu7">28.02</td>
+												<td class="tg-mrss">08:27 <span class="time-green">-3мин</span></td>
+												<td class="tg-mrss">08:27 <span class="time-green">-3мин</span></td>
+												<td class="tg-mrss">08:36 <span class="time-red">-24мин</span></td>
+											</tr>
+											<tr>
+												<td class="tg-zbu7">25.02</td>
+												<td class="tg-mrss">08:42 <span class="time-red">+12мин</span></td>
+												<td class="tg-mrss">08:42 <span class="time-red">+12мин</span></td>
+												<td class="tg-mrss">08:36 <span class="time-red">-24мин</span></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</li>
+						</ul>
+					</section>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

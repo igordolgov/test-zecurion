@@ -1,0 +1,32 @@
+@media (max-width: 1920px) {
+    .container {
+        max-width: 1694px;
+        padding: 0 22px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .container {
+        padding: 0 22px;
+    }
+}
+
+@media (max-width: 950px) {
+    .aside { display: none; }
+
+    .wrap {  display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .main { padding: 0; }
+
+    /* table { width: auto; } */
+
+    .tg .tg-zbu7,
+    .tg .tg-mrss {
+        font-size: 12px;
+        /* max-width: 140px; */
+    }
+}
